@@ -50,6 +50,10 @@ public class DashBehavior : MonoBehaviour
     }
 }
 ```
+## Getting started
+* Copy the library to your project
+* Add a _UnityContext to the scene, the prefab can be found in "_Libraries\Ez\Prefabs\_UnityContext"
+* You are now ready to use the system
 
 ## What does it do?
 The namespace __Ez.Threading.UnityContext__ exposes 2 task managers
@@ -89,10 +93,6 @@ UnityContext.FixedUpdate
 		rigidBody.MoveTo(transform.position + (direction * Speed * deltaTime));
 	});
 ```
-## Getting started
-* Copy the library to your project
-* Add a _UnityContext to the scene, the prefab can be found in "_Libraries\Ez\Prefabs\_UnityContext"
-* You are now ready to use the system
 
 ## How to
 ### Process messages
