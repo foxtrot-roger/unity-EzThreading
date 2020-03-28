@@ -118,7 +118,7 @@ var task = UnityContext.FixedUpdate
 
 ### End a task early
 ```c#
-	task
+task
 	.ProcessWith(message => 
 	{
 		# # // you can tell the task to finish early by returning false
@@ -150,7 +150,7 @@ var task = UnityContext.FixedUpdate
 The __Ez.Threading.TaskExtension__ and __Ez.Threading.TimeExtension__ classes provide may useful methods :
 #### Filter message
 ```c#
-	task
+task
 	.Where(message => 
 	{
 		// return true if the message should be processed, 
@@ -165,7 +165,7 @@ The __Ez.Threading.TaskExtension__ and __Ez.Threading.TimeExtension__ classes pr
 
 #### Convert messages
 ```c#
-	task
+task
 	.Select(message => 
 	{
 		// return the message converted
@@ -179,7 +179,7 @@ The __Ez.Threading.TaskExtension__ and __Ez.Threading.TimeExtension__ classes pr
 
 #### Delay a task start
 ```c#
-	UnityContext.Update
+UnityContext.Update
 	.StartingIn(timeToWaitInSeconds)
 	.ProcessWith(now => 
 	{
@@ -190,7 +190,7 @@ The __Ez.Threading.TaskExtension__ and __Ez.Threading.TimeExtension__ classes pr
 
 #### End a task after a duration
 ```c#
-	UnityContext.Update
+UnityContext.Update
 	.EndingIn(timeToWaitInSeconds)
 	.ProcessWith(now => 
 	{
