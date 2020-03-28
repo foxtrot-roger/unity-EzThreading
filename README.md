@@ -1,6 +1,6 @@
 ## Overview
 __Ez.Threading__ allows you to start asynchronous tasks in Unity.
-These tasks can be performed on the Update or FixedUpdate, but it is possible to define more.
+These tasks can be performed on the Update or FixedUpdate, and it is possible to define more.
 
 ## What should I use it?
 Moving an object each frame at a give speed is as simple as :
